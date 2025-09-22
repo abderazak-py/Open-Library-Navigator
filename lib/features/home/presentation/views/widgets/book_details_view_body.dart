@@ -1,3 +1,4 @@
+import 'package:bookly/features/home/presentation/views/widgets/custom_book_details_appbar.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -5,6 +6,6 @@ class BookDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const CustomBookDetailsAppbar();
   }
 }
