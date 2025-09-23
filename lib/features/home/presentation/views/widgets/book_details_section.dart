@@ -1,3 +1,4 @@
+import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_action.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_rating.dart';
@@ -19,7 +20,7 @@ class BookDetailsSection extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.26),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(imageUrl: kImageUrl),
         ),
         const SizedBox(height: 40),
         const Text('The Jungle Book', style: Styles.titleText30),
