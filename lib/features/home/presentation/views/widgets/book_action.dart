@@ -7,7 +7,7 @@ class BookAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 14),
+      padding: EdgeInsets.symmetric(horizontal: 30),
       child: Row(
         children: [
           Expanded(
