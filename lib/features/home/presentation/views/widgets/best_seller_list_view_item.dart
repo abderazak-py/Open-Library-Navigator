@@ -53,7 +53,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 3),
-                      const Text('Riya Chopra', style: Styles.titleText14),
+                      const Text('Rudyard Kipling', style: Styles.titleText14),
                       const SizedBox(height: 3),
                       Row(
                         children: [
