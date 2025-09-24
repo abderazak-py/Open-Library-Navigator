@@ -56,8 +56,7 @@ class HomeRepoImpl implements HomeRepo {
   }) async {
     try {
       var data = await apiService.get(
-        endPoint:
-            'volumes?q=subject:$category&maxResults=40', //TODO: handle error when subject doesnt give results
+        endPoint: 'volumes?q=subject:$category&maxResults=40',
       );
       List<BookModel> books = [];
 
