@@ -20,7 +20,7 @@ class CustomBookImage extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadiusGeometry.circular(16),
           child: CachedNetworkImage(
-            imageUrl: book.volumeInfo!.imageLinks!.thumbnail!,
+            imageUrl: book.volumeInfo!.imageLinks?.thumbnail ?? '',
             fit: BoxFit.fill,
             errorWidget: (context, url, error) =>
                 const Icon(Icons.error_outline, size: 99),

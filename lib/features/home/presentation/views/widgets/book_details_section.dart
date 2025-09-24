@@ -33,7 +33,10 @@ class BookDetailsSection extends StatelessWidget {
         Opacity(
           opacity: 0.5,
           child: Text(
-            book.volumeInfo!.authors!.first,
+            textAlign: TextAlign.center,
+            book.volumeInfo!.authors?.first ?? 'unknown author',
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             style: Styles.titleText18.copyWith(fontStyle: FontStyle.italic),
           ),
         ),

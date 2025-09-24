@@ -38,7 +38,7 @@ class BookAction extends StatelessWidget {
                 topRight: Radius.circular(16),
                 bottomRight: Radius.circular(16),
               ),
-              text: 'Read Now',
+              text: 'Preview',
             ),
           ),
         ],
