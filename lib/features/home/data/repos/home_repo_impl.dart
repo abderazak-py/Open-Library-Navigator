@@ -61,11 +61,13 @@ class HomeRepoImpl implements HomeRepo {
       );
       List<BookModel> books = [];
 
-      for (var item in data['items']) {
-        books.add(BookModel.fromJson(item));
+      if (data['items'] != null) {
+        for (var item in data['items']) {
+          books.add(BookModel.fromJson(item));
+        }
+        return right(books);
       }
-
-      return right(books);
+      return left(ServerFilure(errMessage: 'No Books Found'));
     } on Exception catch (e) {
       if (e is DioException) {
         ServerFilure.fromDioError(e);
