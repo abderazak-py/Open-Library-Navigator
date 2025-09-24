@@ -17,15 +17,18 @@ class SimilarBooksListView extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * 0.15,
             child: ListView.builder(
+              itemCount: state.books.length - 1,
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.only(left: 22),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return SizedBox(
                   height: MediaQuery.of(context).size.height * 0.3,
-                  child: const Padding(
-                    padding: EdgeInsets.all(6.0),
-                    child: CustomBookImage(imageUrl: kImageUrl),
+                  child: Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: CustomBookImage(
+                      book: state.books[index + 1],
+                    ), // added +1 so that the first book is not shown cuz its the book that is currently being viewed
                   ),
                 );
               },

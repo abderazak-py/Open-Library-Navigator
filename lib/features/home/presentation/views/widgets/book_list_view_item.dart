@@ -15,13 +15,13 @@ class BookListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kBookDetailsView);
+        GoRouter.of(context).push(AppRouter.kBookDetailsView, extra: book);
       },
       child: SizedBox(
         height: MediaQuery.of(context).size.height * 0.16,
         child: Row(
           children: [
-            CustomBookImage(imageUrl: book.volumeInfo!.imageLinks!.thumbnail!),
+            CustomBookImage(book: book),
             const SizedBox(width: 30),
             Expanded(
               child: Column(

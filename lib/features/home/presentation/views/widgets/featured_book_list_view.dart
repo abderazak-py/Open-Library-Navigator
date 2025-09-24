@@ -25,10 +25,7 @@ class FeaturedBookListView extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.3,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: CustomBookImage(
-                      imageUrl:
-                          state.books[index].volumeInfo!.imageLinks!.thumbnail!,
-                    ),
+                    child: CustomBookImage(book: state.books[index]),
                   ),
                 );
               },
