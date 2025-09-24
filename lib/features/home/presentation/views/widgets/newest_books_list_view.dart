@@ -21,7 +21,7 @@ class NewestBooksListView extends StatelessWidget {
                 ),
                 child: BookListViewItem(book: state.books[index]),
               ),
-              childCount: 10,
+              childCount: state.books.length,
             ),
           );
         } else if (state is NewestBooksFailure) {
