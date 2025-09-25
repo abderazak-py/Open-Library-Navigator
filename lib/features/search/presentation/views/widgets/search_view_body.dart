@@ -1,7 +1,7 @@
 import 'package:bookly/core/utils/service_locator.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/core/widgets/custom_error_widget.dart';
-import 'package:bookly/core/widgets/loading_book_item.dart';
+import 'package:bookly/features/home/presentation/views/widgets/loading_book_item.dart';
 import 'package:bookly/features/search/data/repos/search_repo_impl.dart';
 import 'package:bookly/features/search/presentation/manager/cubit/search_cubit.dart';
 import 'package:bookly/features/search/presentation/views/widgets/custom_search_text_field.dart';
