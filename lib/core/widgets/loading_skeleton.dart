@@ -18,7 +18,7 @@ class _LoadingSkeletonState extends State<LoadingSkeleton>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2),
+      duration: const Duration(milliseconds: 1200),
     )..repeat();
   }
 
@@ -33,28 +33,33 @@ class _LoadingSkeletonState extends State<LoadingSkeleton>
     return AnimatedBuilder(
       animation: _controller,
       builder: (_, __) {
-        return ShaderMask(
-          shaderCallback: (bounds) {
-            return LinearGradient(
-              begin: Alignment(-1.0 + 2 * _controller.value, 0),
-              end: Alignment(1.0 + 2 * _controller.value, 0),
-              colors: [
-                Colors.grey.shade300,
-                Colors.grey.shade100,
-                Colors.grey.shade300,
+        // Calculate smooth position for the shimmer highlight
+        final shimmerValue = (_controller.value * 2) - 1; // Range: -1 to 1
+
+        return Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            gradient: LinearGradient(
+              begin: const Alignment(-1.0, 0.0),
+              end: const Alignment(1.0, 0.0),
+              colors: const [
+                Color(0xFF1A1529), // Base
+                Color(0xFF2D2542), // Mid
+                Color(0xFF403763), // Highlight
+                Color(0xFF2D2542), // Mid
+                Color(0xFF1A1529), // Base
               ],
-              stops: const [0.25, 0.5, 0.75],
-            ).createShader(bounds);
-          },
-          blendMode: BlendMode.srcATop,
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
-              color: Colors.grey.shade300,
+              stops: [
+                (shimmerValue - 0.3).clamp(0.0, 1.0),
+                (shimmerValue - 0.15).clamp(0.0, 1.0),
+                shimmerValue.clamp(0.0, 1.0),
+                (shimmerValue + 0.15).clamp(0.0, 1.0),
+                (shimmerValue + 0.3).clamp(0.0, 1.0),
+              ],
             ),
-            width: widget.width,
-            height: widget.height,
           ),
+          width: widget.width,
+          height: widget.height,
         );
       },
     );
