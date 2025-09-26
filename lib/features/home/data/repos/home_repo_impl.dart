@@ -37,7 +37,7 @@ class HomeRepoImpl implements HomeRepo {
           }
           return right(books);
         }
-        ServerFilure.fromDioError(e);
+        return left(ServerFilure.fromDioError(e));
       }
 
       return left(ServerFilure(errMessage: e.toString()));
@@ -68,7 +68,7 @@ class HomeRepoImpl implements HomeRepo {
           }
           return right(books);
         }
-        ServerFilure.fromDioError(e);
+        return left(ServerFilure.fromDioError(e));
       }
       return left(ServerFilure(errMessage: e.toString()));
     }
@@ -104,7 +104,7 @@ class HomeRepoImpl implements HomeRepo {
           }
           return right(books);
         }
-        ServerFilure.fromDioError(e);
+        return left(ServerFilure.fromDioError(e));
       }
       return left(ServerFilure(errMessage: e.toString()));
     }

@@ -35,7 +35,9 @@ class ServerFilure extends Failure {
 
   factory ServerFilure.fromResponse(int statusCode, dynamic response) {
     if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
-      return ServerFilure(errMessage: response['error']['message']);
+      return ServerFilure(
+        errMessage: statusCode.toString() + response['error']['message'],
+      );
     } else if (statusCode == 404) {
       return ServerFilure(errMessage: 'Not Found, Try later');
     } else if (statusCode == 500) {

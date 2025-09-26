@@ -29,7 +29,7 @@ class SearchRepoImpl implements SearchRepo {
       return right(books);
     } on Exception catch (e) {
       if (e is DioException) {
-        ServerFilure.fromDioError(e);
+        return left(ServerFilure.fromDioError(e));
       }
       return left(ServerFilure(errMessage: e.toString()));
     }
