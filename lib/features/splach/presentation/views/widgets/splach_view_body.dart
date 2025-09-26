@@ -37,6 +37,7 @@ class _SplachViewBodyState extends State<SplachViewBody>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset(AssetsData.logo),
+        const SizedBox(height: 20),
         SlidingText(
           slidingAnimation: slidingAnimation,
           fadeAnimation: fadeAnimation,

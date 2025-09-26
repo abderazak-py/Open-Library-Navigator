@@ -20,7 +20,7 @@ class SlidingText extends StatelessWidget {
           child: FadeTransition(
             opacity: fadeAnimation,
             child: const Text(
-              'Read Free Books',
+              'Open Library Navigator',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20),
             ),
