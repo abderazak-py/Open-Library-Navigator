@@ -1,4 +1,4 @@
-package com.example.bookly
+package com.abderazak.open_library_navigatory
 
 import io.flutter.embedding.android.FlutterActivity
 

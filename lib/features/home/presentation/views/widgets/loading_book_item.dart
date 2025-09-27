@@ -1,4 +1,4 @@
-import 'package:bookly/core/widgets/loading_skeleton.dart';
+import 'package:open_library_navigator/core/widgets/loading_skeleton.dart';
 import 'package:flutter/material.dart';
 
 class LoadingBookItem extends StatelessWidget {

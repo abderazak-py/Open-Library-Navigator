@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:bookly/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly/features/search/data/repos/search_repo.dart';
+import 'package:open_library_navigator/features/home/data/models/book_model/book_model.dart';
+import 'package:open_library_navigator/features/search/data/repos/search_repo.dart';
 import 'package:equatable/equatable.dart';
 
 part 'search_state.dart';

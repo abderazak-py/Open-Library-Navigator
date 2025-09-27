@@ -1,10 +1,10 @@
-# Bookly: A Book Discovery App
+# Open Library Navigator: A Book Discovery App
 
 [![Flutter Version](https://img.shields.io/badge/Flutter-3.x-blue.svg)](https://flutter.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Bookly is a Flutter-based mobile application that allows users to discover and browse through a vast collection of books. The app provides a clean and intuitive interface to explore featured books, search for specific titles, and view detailed information about each book.
+Open Library Navigator is a Flutter-based mobile application that allows users to discover and browse through a vast collection of books. The app provides a clean and intuitive interface to explore featured books, search for specific titles, and view detailed information about each book.
 
 <!-- 
 ## Screenshots
@@ -77,11 +77,11 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/abderazak-py/bookly.git
+    git https://github.com/abderazak-py/Open-Library-Navigator.git
     ```
 2.  **Navigate to the project directory:**
     ```sh
-    cd bookly
+    cd Open-Library-Navigator
     ```
 3.  **Install dependencies:**
     ```sh

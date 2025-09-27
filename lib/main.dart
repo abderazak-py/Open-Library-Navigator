@@ -1,9 +1,9 @@
-import 'package:bookly/constants.dart';
-import 'package:bookly/core/utils/app_router.dart';
-import 'package:bookly/core/utils/service_locator.dart';
-import 'package:bookly/features/home/data/repos/home_repo_impl.dart';
-import 'package:bookly/features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
-import 'package:bookly/features/home/presentation/manager/newest_books_cubit/newest_books_cubit.dart';
+import 'package:open_library_navigator/constants.dart';
+import 'package:open_library_navigator/core/utils/app_router.dart';
+import 'package:open_library_navigator/core/utils/service_locator.dart';
+import 'package:open_library_navigator/features/home/data/repos/home_repo_impl.dart';
+import 'package:open_library_navigator/features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
+import 'package:open_library_navigator/features/home/presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,11 +12,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 void main() async {
   await GetStorage.init();
   setupLocator();
-  runApp(const Bookly());
+  runApp(const OpenLibraryNavigator());
 }
 
-class Bookly extends StatelessWidget {
-  const Bookly({super.key});
+class OpenLibraryNavigator extends StatelessWidget {
+  const OpenLibraryNavigator({super.key});
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(

@@ -1,11 +1,11 @@
-import 'package:bookly/core/utils/service_locator.dart';
-import 'package:bookly/core/utils/styles.dart';
-import 'package:bookly/core/widgets/custom_error_widget.dart';
-import 'package:bookly/features/home/presentation/views/widgets/loading_book_item.dart';
-import 'package:bookly/features/search/data/repos/search_repo_impl.dart';
-import 'package:bookly/features/search/presentation/manager/cubit/search_cubit.dart';
-import 'package:bookly/features/search/presentation/views/widgets/custom_search_text_field.dart';
-import 'package:bookly/features/search/presentation/views/widgets/search_result_list_view.dart';
+import 'package:open_library_navigator/core/utils/service_locator.dart';
+import 'package:open_library_navigator/core/utils/styles.dart';
+import 'package:open_library_navigator/core/widgets/custom_error_widget.dart';
+import 'package:open_library_navigator/features/home/presentation/views/widgets/loading_book_item.dart';
+import 'package:open_library_navigator/features/search/data/repos/search_repo_impl.dart';
+import 'package:open_library_navigator/features/search/presentation/manager/cubit/search_cubit.dart';
+import 'package:open_library_navigator/features/search/presentation/views/widgets/custom_search_text_field.dart';
+import 'package:open_library_navigator/features/search/presentation/views/widgets/search_result_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

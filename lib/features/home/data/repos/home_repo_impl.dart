@@ -1,8 +1,8 @@
-import 'package:bookly/constants.dart';
-import 'package:bookly/core/errors/failure.dart';
-import 'package:bookly/core/utils/api_service.dart';
-import 'package:bookly/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly/features/home/data/repos/home_repo.dart';
+import 'package:open_library_navigator/constants.dart';
+import 'package:open_library_navigator/core/errors/failure.dart';
+import 'package:open_library_navigator/core/utils/api_service.dart';
+import 'package:open_library_navigator/features/home/data/models/book_model/book_model.dart';
+import 'package:open_library_navigator/features/home/data/repos/home_repo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:get_storage/get_storage.dart';
