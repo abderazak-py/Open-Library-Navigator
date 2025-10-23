@@ -6,12 +6,16 @@
 
 Open Library Navigator is a Flutter-based mobile application that allows users to discover and browse through a vast collection of books. The app provides a clean and intuitive interface to explore featured books, search for specific titles, and view detailed information about each book.
 
-<!-- 
+
 ## Screenshots
 
 | Splash Screen | Home Screen | Book Details |
 | :-----------: | :---------: | :----------: |
-| ![Splash Screen](https://via.placeholder.com/200x400.png?text=Splash+Screen) | ![Home Screen](https://via.placeholder.com/200x400.png?text=Home+Screen) | ![Book Details](https://via.placeholder.com/200x400.png?text=Book+Details) | -->
+| ![Splash Screen](https://raw.githubusercontent.com/abderazak-py/Open-Library-Navigator/main/screenshots/splach.webp) | ![Home Screen](https://raw.githubusercontent.com/abderazak-py/Open-Library-Navigator/main/screenshots/home.webp) | ![Book Details](https://raw.githubusercontent.com/abderazak-py/Open-Library-Navigator/main/screenshots/book.webp) |
+| **Loading Screen** | **Search Screen** |   |
+| ![Loading Screen](https://raw.githubusercontent.com/abderazak-py/Open-Library-Navigator/main/screenshots/loading.webp) | ![Search Screen](https://raw.githubusercontent.com/abderazak-py/Open-Library-Navigator/main/screenshots/search.webp) |   |
+
+
 
 ## Table of Contents
 
